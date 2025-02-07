@@ -29,6 +29,9 @@ module.exports = {
         props: { message: 'Open a Markdown file to get started.' }
       }
     }
-    return { page: 'index' }
+    const Markdown = await Markdown.findOne({ publicId });
+    if (!Markdown) {
+      throw 'notFound';
+    }
   }
 }
