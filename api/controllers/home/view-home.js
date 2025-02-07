@@ -33,5 +33,9 @@ module.exports = {
     if (!Markdown) {
       throw 'notFound';
     }
+    return {
+      page: 'index',
+      props: { markdown: Markdown }
+    }
   }
 }
