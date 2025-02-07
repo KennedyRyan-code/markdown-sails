@@ -18,7 +18,7 @@ module.exports.routes = {
    * for configuration options and examples.                                  *
    *                                                                          *
    ***************************************************************************/
-  'GET /': 'home/view-home',
+  'GET /publicid?': 'home/view-home',
 
   'GET /signup': 'auth/view-signup',
   'POST /signup': 'auth/signup',
