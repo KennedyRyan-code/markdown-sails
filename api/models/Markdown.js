@@ -8,20 +8,16 @@
 module.exports = {
 
   attributes: {
-
-    //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
-    //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
-    //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
-
-
-    //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
-    //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
-    //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
-
-
-    //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
-    //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
-    //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
+    title: {
+      type: 'string',
+      defaultsTo: 'Untitled',
+      maxLength: 255,
+      example: 'My first Markdown file'
+    },
+    content: {
+      type: 'ref',
+      defaultsTo: '# New Markdown File...',
+    }
 
   },
 
