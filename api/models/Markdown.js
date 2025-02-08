@@ -7,6 +7,8 @@
 
 module.exports = {
 
+  tableName: 'markdowns',
+
   attributes: {
     title: {
       type: 'string',
@@ -17,6 +19,16 @@ module.exports = {
     content: {
       type: 'ref',
       defaultsTo: '# New Markdown File...',
+    },
+    shareId: {
+      type: 'string',
+      allowNull: true,
+      columnName: 'share_id'
+    },
+
+    owner: {
+      model: 'user',
+      required: true
     }
 
   },
